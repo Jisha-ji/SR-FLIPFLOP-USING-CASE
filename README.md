@@ -59,18 +59,19 @@ qbar=1;
 end
 always @(posedge clk)
 begin
-   q=s|(~r&q);
-   qbar=r|(~s&~q);
+q=s|(~r&q);
+qbar=r|(~s&~q);
 end
 endmodule
 ```
 
-**RTL LOGIC FOR FLIPFLOPS**
+**RTL LOGIC FOR SR-FLIPFLOP**
 ![funct6](https://github.com/user-attachments/assets/f22fcf04-68ea-4c2f-81ac-215debcc160e)
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
-![funct6 last op](https://github.com/user-attachments/assets/f6647401-f20b-4f10-afb0-cab45f034383)
+**OUTPUT FOR SR-FLIP FLOP**
 
-**RESULTS**
+![image](https://github.com/user-attachments/assets/822062e9-8413-4739-8386-7c23fce90b85)
+
+**RESULT**
 SR flipflop using verilog and validating their functionality using their functional tables is verified.
 
